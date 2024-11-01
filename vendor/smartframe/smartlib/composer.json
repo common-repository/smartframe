@@ -1,0 +1,25 @@
+{
+  "name": "smartframe/smartlib",
+  "type": "library",
+  "description": "Smartframe Lib For Developing Wordpress",
+  "keywords": [
+    "Lib Smartframe"
+  ],
+  "homepage": "https://smartframe.com",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Paweł Cudziło",
+      "email": "pawel.cudzilo@smartframe.com",
+      "homepage": "https://smartframe.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "SmartFrameLib\\": "src/"
+    }
+  }
+}

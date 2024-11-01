@@ -1,0 +1,191 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+smart-frame .overlay [data-layer='deterrent'] .deterrent__message_container [data-deterrent-copyright-icon] {
+    object-fit: contain;
+}
+
+.entry .entry-content .wp-block-image .aligncenter {
+    text-align: center;
+}
+
+
+/* smartframe fixed */
+
+
+.wp-block-gallery.is-cropped .blocks-gallery-item smart-frame a {
+    height: auto;
+}
+
+
+/* envold theme fix css styles */
+
+body#top smart-frame .overlay [data-layer='share'] select {
+    width: 100%;
+    border-bottom-width: var(--border-width);
+    border-bottom-style: solid;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-color: var(--color-text);
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    caret-color: var(--color-text);
+    font-size: var(--base-size);
+    color: var(--color-text);
+    line-height: 1.5;
+    user-select: none;
+    -webkit-appearance: none !important;
+    border-radius: 0;
+    position: relative;
+    z-index: 1;
+}
+
+
+body#top smart-frame .overlay [data-layer='share'] .share__text.\--w50 {
+    width: 47.5%;
+    display: inline-block;
+    margin-left: 5%;
+    float: left;
+}
+
+body#top smart-frame .overlay [data-layer='share'] .share__text {
+    position: relative;
+}
+
+body#top smart-frame .overlay [data-layer='share'] .share__text.\--w50:first-child {
+    margin-left: 0;
+}
+
+body#top smart-frame .overlay [data-layer='share'] .share__text {
+    width: 100%;
+    border-bottom-width: var(--border-width);
+    border-bottom-style: solid;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    caret-color: #ffffff;
+    font-size: 12px;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+body#top smart-frame .overlay [data-layer='monetizer'].mobile .monetizer__subscribe_form .monetizer__input {
+    padding: 0;
+}
+
+body#top smart-frame .overlay [data-layer='monetizer'] .monetizer__subscribe_form .monetizer__form input {
+    min-width: 50%;
+}
+
+body#top smart-frame .overlay [data-layer='monetizer'] .monetizer__input {
+    flex: 1 1 auto;
+    border: 0;
+    outline: 0;
+    margin: 0 1.25em 0 0;
+    color: var(--monetizer-color-text);
+    font-size: var(--base-size);
+    padding: 0.6em 0;
+    background: none;
+    border-bottom: 0.125em solid var(--monetizer-color-text);
+}
+
+body smart-frame .overlay [data-layer='monetizer'] .monetizer__input:focus,
+body smart-frame .overlay input[type="text"]:focus,
+body smart-frame .overlay input[type="email"]:focus,
+body smart-frame .overlay input[type="url"]:focus,
+body smart-frame .overlay input[type="password"]:focus,
+body smart-frame .overlay input[type="search"]:focus {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+
+/* avada*/
+
+
+smart-frame .share__col input {
+    height: auto;
+}
+
+
+/*.wp-block-gallery.is-cropped .blocks-gallery-image smart-frame a,*/
+/*.wp-block-gallery.is-cropped .blocks-gallery-image smart-frame img,*/
+/*.wp-block-gallery.is-cropped .blocks-gallery-item smart-frame a,*/
+/*.wp-block-gallery.is-cropped .blocks-gallery-item smart-frame img {*/
+/*    height: auto;*/
+/*    flex: none;*/
+/*    -o-object-fit: none;*/
+/*    object-fit: none;*/
+/*    width: auto;*/
+/*}*/
+
+
+.wp-block-gallery .blocks-gallery-image smart-frame img.teaser__logo,
+.wp-block-gallery .blocks-gallery-item smart-frame img.teaser__logo {
+    max-width: none;
+}
+
+smart-frame input[type="password"],
+smart-frame input[type="email"],
+smart-frame input[type="number"],
+smart-frame input[type="password"],
+smart-frame input[type="text"], select {
+    height: auto;
+}
+
+/*//Divi builder*/
+#et-boc smart-frame [data-layer="deterrent"] {
+    color: var(--color-text);
+    background: var(--color-background);
+    text-align: center;
+}
+
+
+/*Smartframe Error Css fixes*/
+
+#main smart-frame h2,
+#wrapper .post-content smart-frame h2,
+smart-frame h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.1rem;
+    font-weight: 500;
+    line-height: 1.2;
+    border-bottom: none;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wp-block-image smart-frame .error-container img {
+    display: inline;
+}
+
+/*smartframe errros with graphics on some themes*/
+
+body smart-frame.error .error-wrapper .error-container > div img {
+    display: inline-block;
+}
+
+body smart-frame.error .error-wrapper .error-container {
+    line-height: 1.4;
+}
+
+body #main smart-frame.error h2, body #wrapper .post-content smart-frame.error h2, body smart-frame.error h2 {
+    letter-spacing: 0;
+}
+
+ul.blocks-gallery-grid {
+    width: 100%;
+}
+
+
+smart-frame.hide-overlay .overlay {
+    display: none !important;
+}

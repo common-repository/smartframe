@@ -1,0 +1,55 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+.wp-block-cgb-block-my-block {
+  background: $green;
+  border: 0.2rem solid $black;
+  color: $black;
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 2rem;
+}
+
+.smartframe-modal-preview-open {
+  text-decoration: none;
+}
+
+.smartframe-modal-preview {
+  width: fit-content;
+  height: fit-content;
+  top: 20px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  transform: none;
+  max-width: 90%;
+  max-height: 90%;
+  .smartframe-modal-preview-smartframe{
+    text-align: center;
+  }
+
+
+
+  .smartframe-modal-preview {
+    text-align: center;
+  }
+  .smartframe-modal-preview-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .smartframe-preview-spinner {
+      float: none;
+    }
+  }
+}
+
+.smartframe--manage-themes-image-edit {
+  display: block;
+  text-decoration: none;
+  margin: -11px 0 10px 0px;
+}

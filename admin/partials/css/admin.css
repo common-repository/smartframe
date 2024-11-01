@@ -1,0 +1,1216 @@
+body.toplevel_page_smart-frame-main-menu #wpcontent,
+body.smartframe_page_smart-frame-examples #wpcontent,
+body.smartframe-1_page_smart-frame-examples #wpcontent,
+body.smartframe-1_page_smart-frame-tutorial #wpcontent,
+body.smartframe_page_smart-frame-register #wpcontent,
+body.smartframe-1_page_smart-frame-register #wpcontent,
+body.smartframe_page_smart-frame-tutorial #wpcontent {
+    padding: 0;
+}
+
+body.toplevel_page_smart-frame-main-menu .update-nag,
+body.smartframe_page_smart-frame-examples .update-nag,
+body.smartframe-1_page_smart-frame-examples .update-nag,
+body.smartframe-1_page_smart-frame-tutorial .update-nag,
+body.smartframe_page_smart-frame-tutorial .update-nag,
+body.smartframe_page_smart-frame-register .update-nag,
+body.smartframe-1_page_smart-frame-register .update-nag {
+    margin-left: 15px;
+}
+
+body.toplevel_page_smart-frame-main-menu .wrap,
+body.smartframe_page_smart-frame-examples .wrap,
+body.smartframe-1_page_smart-frame-examples .wrap,
+body.smartframe-1_page_smart-frame-tutorial .wrap,
+body.smartframe_page_smart-frame-register .wrap,
+body.smartframe-1_page_smart-frame-register .wrap,
+body.smartframe_page_smart-frame-tutorial .wrap {
+    margin: 20px;
+}
+
+body #toplevel_page_smart-frame-main-menu .wp-menu-image.dashicons-before img {
+    width: 22px;
+    padding: 6px 0 0 0;
+}
+
+/*Settings Page csss styles for proporties.php*/
+.progress-circle {
+    font-size: 27px;
+    margin: 20px 0;
+    position: relative; /* so that children can be absolutely positioned */
+    padding: 0;
+    width: 5em;
+    height: 5em;
+    background-color: #e6e6e6;
+    border-radius: 50%;
+}
+
+.progress-circle:after {
+    border: none;
+    position: absolute;
+    top: 0.35em;
+    left: 0.35em;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    width: 4.3em;
+    height: 4.3em;
+    background-color: white;
+    content: " ";
+}
+
+/* Text inside the control */
+.progress-circle .progress-data {
+    height: 40px;
+    text-align: center;
+    padding: 0 10px;
+    display: block;
+    color: #53777A;
+    z-index: 2;
+    font-size: 16px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.left-half-clipper {
+    /* a round circle */
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+    position: absolute; /* needed for clipping */
+    clip: rect(0, 5em, 5em, 2.5em); /* clips the whole left half*/
+}
+
+/* when p>50, don't clip left half*/
+.progress-circle.over50 .left-half-clipper {
+    clip: rect(auto, auto, auto, auto);
+}
+
+.value-bar {
+    /*This is an overlayed square, that is made round with the border radius,
+    then it is cut to display only the left half, then rotated clockwise
+    to escape the outer clipping path.*/
+    position: absolute; /*needed for clipping*/
+    clip: rect(0, 2.5em, 5em, 0);
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    border: 0.45em solid #3d7dde; /*The border is 0.35 but making it larger removes visual artifacts */
+    /*background-color: #4D642D;*/
+    /* for debug */
+    box-sizing: border-box;
+
+}
+
+/* Progress bar filling the whole right half for values above 50% */
+.progress-circle.over50 .first50-bar {
+    /*Progress bar for the first 50%, filling the whole right half*/
+    position: absolute; /*needed for clipping*/
+    clip: rect(0, 5em, 5em, 2.5em);
+    background-color: #3d7dde;
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+}
+
+.progress-circle:not(.over50) .first50-bar {
+    display: none;
+}
+
+/* Progress bar rotation position */
+.progress-circle.p0 .value-bar {
+    display: none;
+}
+
+.progress-circle.p1 .value-bar {
+    transform: rotate(4deg);
+}
+
+.progress-circle.p2 .value-bar {
+    transform: rotate(7deg);
+}
+
+.progress-circle.p3 .value-bar {
+    transform: rotate(11deg);
+}
+
+.progress-circle.p4 .value-bar {
+    transform: rotate(14deg);
+}
+
+.progress-circle.p5 .value-bar {
+    transform: rotate(18deg);
+}
+
+.progress-circle.p6 .value-bar {
+    transform: rotate(22deg);
+}
+
+.progress-circle.p7 .value-bar {
+    transform: rotate(25deg);
+}
+
+.progress-circle.p8 .value-bar {
+    transform: rotate(29deg);
+}
+
+.progress-circle.p9 .value-bar {
+    transform: rotate(32deg);
+}
+
+.progress-circle.p10 .value-bar {
+    transform: rotate(36deg);
+}
+
+.progress-circle.p11 .value-bar {
+    transform: rotate(40deg);
+}
+
+.progress-circle.p12 .value-bar {
+    transform: rotate(43deg);
+}
+
+.progress-circle.p13 .value-bar {
+    transform: rotate(47deg);
+}
+
+.progress-circle.p14 .value-bar {
+    transform: rotate(50deg);
+}
+
+.progress-circle.p15 .value-bar {
+    transform: rotate(54deg);
+}
+
+.progress-circle.p16 .value-bar {
+    transform: rotate(58deg);
+}
+
+.progress-circle.p17 .value-bar {
+    transform: rotate(61deg);
+}
+
+.progress-circle.p18 .value-bar {
+    transform: rotate(65deg);
+}
+
+.progress-circle.p19 .value-bar {
+    transform: rotate(68deg);
+}
+
+.progress-circle.p20 .value-bar {
+    transform: rotate(72deg);
+}
+
+.progress-circle.p21 .value-bar {
+    transform: rotate(76deg);
+}
+
+.progress-circle.p22 .value-bar {
+    transform: rotate(79deg);
+}
+
+.progress-circle.p23 .value-bar {
+    transform: rotate(83deg);
+}
+
+.progress-circle.p24 .value-bar {
+    transform: rotate(86deg);
+}
+
+.progress-circle.p25 .value-bar {
+    transform: rotate(90deg);
+}
+
+.progress-circle.p25 .value-bar {
+    transform: rotate(90deg);
+}
+
+.progress-circle.p26 .value-bar {
+    transform: rotate(94deg);
+}
+
+.progress-circle.p27 .value-bar {
+    transform: rotate(97deg);
+}
+
+.progress-circle.p28 .value-bar {
+    transform: rotate(101deg);
+}
+
+.progress-circle.p29 .value-bar {
+    transform: rotate(104deg);
+}
+
+.progress-circle.p30 .value-bar {
+    transform: rotate(108deg);
+}
+
+.progress-circle.p31 .value-bar {
+    transform: rotate(112deg);
+}
+
+.progress-circle.p32 .value-bar {
+    transform: rotate(115deg);
+}
+
+.progress-circle.p33 .value-bar {
+    transform: rotate(119deg);
+}
+
+.progress-circle.p34 .value-bar {
+    transform: rotate(122deg);
+}
+
+.progress-circle.p35 .value-bar {
+    transform: rotate(126deg);
+}
+
+.progress-circle.p36 .value-bar {
+    transform: rotate(130deg);
+}
+
+.progress-circle.p37 .value-bar {
+    transform: rotate(133deg);
+}
+
+.progress-circle.p38 .value-bar {
+    transform: rotate(137deg);
+}
+
+.progress-circle.p39 .value-bar {
+    transform: rotate(140deg);
+}
+
+.progress-circle.p40 .value-bar {
+    transform: rotate(144deg);
+}
+
+.progress-circle.p41 .value-bar {
+    transform: rotate(148deg);
+}
+
+.progress-circle.p42 .value-bar {
+    transform: rotate(151deg);
+}
+
+.progress-circle.p43 .value-bar {
+    transform: rotate(155deg);
+}
+
+.progress-circle.p44 .value-bar {
+    transform: rotate(158deg);
+}
+
+.progress-circle.p45 .value-bar {
+    transform: rotate(162deg);
+}
+
+.progress-circle.p46 .value-bar {
+    transform: rotate(166deg);
+}
+
+.progress-circle.p47 .value-bar {
+    transform: rotate(169deg);
+}
+
+.progress-circle.p48 .value-bar {
+    transform: rotate(173deg);
+}
+
+.progress-circle.p49 .value-bar {
+    transform: rotate(176deg);
+}
+
+.progress-circle.p50 .value-bar {
+    transform: rotate(180deg);
+}
+
+.progress-circle.p51 .value-bar {
+    transform: rotate(184deg);
+}
+
+.progress-circle.p52 .value-bar {
+    transform: rotate(187deg);
+}
+
+.progress-circle.p53 .value-bar {
+    transform: rotate(191deg);
+}
+
+.progress-circle.p54 .value-bar {
+    transform: rotate(194deg);
+}
+
+.progress-circle.p55 .value-bar {
+    transform: rotate(198deg);
+}
+
+.progress-circle.p56 .value-bar {
+    transform: rotate(202deg);
+}
+
+.progress-circle.p57 .value-bar {
+    transform: rotate(205deg);
+}
+
+.progress-circle.p58 .value-bar {
+    transform: rotate(209deg);
+}
+
+.progress-circle.p59 .value-bar {
+    transform: rotate(212deg);
+}
+
+.progress-circle.p60 .value-bar {
+    transform: rotate(216deg);
+}
+
+.progress-circle.p61 .value-bar {
+    transform: rotate(220deg);
+}
+
+.progress-circle.p62 .value-bar {
+    transform: rotate(223deg);
+}
+
+.progress-circle.p63 .value-bar {
+    transform: rotate(227deg);
+}
+
+.progress-circle.p64 .value-bar {
+    transform: rotate(230deg);
+}
+
+.progress-circle.p65 .value-bar {
+    transform: rotate(234deg);
+}
+
+.progress-circle.p66 .value-bar {
+    transform: rotate(238deg);
+}
+
+.progress-circle.p67 .value-bar {
+    transform: rotate(241deg);
+}
+
+.progress-circle.p68 .value-bar {
+    transform: rotate(245deg);
+}
+
+.progress-circle.p69 .value-bar {
+    transform: rotate(248deg);
+}
+
+.progress-circle.p70 .value-bar {
+    transform: rotate(252deg);
+}
+
+.progress-circle.p71 .value-bar {
+    transform: rotate(256deg);
+}
+
+.progress-circle.p72 .value-bar {
+    transform: rotate(259deg);
+}
+
+.progress-circle.p73 .value-bar {
+    transform: rotate(263deg);
+}
+
+.progress-circle.p74 .value-bar {
+    transform: rotate(266deg);
+}
+
+.progress-circle.p75 .value-bar {
+    transform: rotate(270deg);
+}
+
+.progress-circle.p76 .value-bar {
+    transform: rotate(274deg);
+}
+
+.progress-circle.p77 .value-bar {
+    transform: rotate(277deg);
+}
+
+.progress-circle.p78 .value-bar {
+    transform: rotate(281deg);
+}
+
+.progress-circle.p79 .value-bar {
+    transform: rotate(284deg);
+}
+
+.progress-circle.p80 .value-bar {
+    transform: rotate(288deg);
+    border: 0.45em solid #efbd14;
+}
+
+.progress-circle.over50.p80 .first50-bar {
+    background-color: #efbd14;
+}
+
+.progress-circle.p81 .value-bar {
+    transform: rotate(292deg);
+    border: 0.45em solid #efbd14;
+}
+
+.progress-circle.over50.p81 .first50-bar {
+    background-color: #efbd14;
+}
+
+.progress-circle.p82 .value-bar {
+    transform: rotate(295deg);
+    border: 0.45em solid #efbd14;
+}
+
+.progress-circle.over50.p82 .first50-bar {
+    background-color: #efbd14;
+}
+
+.progress-circle.p83 .value-bar {
+    transform: rotate(299deg);
+    border: 0.45em solid #efbd14;
+}
+
+.progress-circle.over50.p83 .first50-bar {
+    background-color: #efbd14;
+}
+
+.progress-circle.p84 .value-bar {
+    transform: rotate(302deg);
+    border: 0.45em solid #efbd14;
+}
+
+.progress-circle.over50.p84 .first50-bar {
+    background-color: #efbd14;
+}
+
+.progress-circle.p85 .value-bar {
+    transform: rotate(306deg);
+    border: 0.45em solid #efbd14;
+}
+
+.progress-circle.over50.p85 .first50-bar {
+    background-color: #efbd14;
+}
+
+.progress-circle.p86 .value-bar {
+    transform: rotate(310deg);
+    border: 0.45em solid #efbd14;
+}
+
+.progress-circle.over50.p86 .first50-bar {
+    background-color: #efbd14;
+}
+
+.progress-circle.p87 .value-bar {
+    transform: rotate(313deg);
+    border: 0.45em solid #efbd14;
+}
+
+.progress-circle.over50.p87 .first50-bar {
+    background-color: #efbd14;
+}
+
+.progress-circle.p88 .value-bar {
+    transform: rotate(317deg);
+    border: 0.45em solid #efbd14;
+}
+
+.progress-circle.over50.p88 .first50-bar {
+    background-color: #efbd14;
+}
+
+.progress-circle.p89 .value-bar {
+    transform: rotate(320deg);
+    border: 0.45em solid #efbd14;
+}
+
+.progress-circle.over50.p89 .first50-bar {
+    background-color: #efbd14;
+}
+
+.progress-circle.p90 .value-bar {
+    transform: rotate(324deg);
+    border: 0.45em solid #efbd14;
+}
+
+.progress-circle.over50.p90 .first50-bar {
+    background-color: #efbd14;
+}
+
+.progress-circle.p91 .value-bar {
+    transform: rotate(328deg);
+    border: 0.45em solid #efbd14;
+}
+
+.progress-circle.over50.p91 .first50-bar {
+    background-color: #efbd14;
+}
+
+.progress-circle.p92 .value-bar {
+    transform: rotate(331deg);
+    border: 0.45em solid #efbd14;
+}
+
+.progress-circle.over50.p92 .first50-bar {
+    background-color: #efbd14;
+}
+
+.progress-circle.p93 .value-bar {
+    transform: rotate(335deg);
+    border: 0.45em solid #efbd14;
+}
+
+.progress-circle.over50.p93 .first50-bar {
+    background-color: #efbd14;
+}
+
+.progress-circle.p94 .value-bar {
+    transform: rotate(338deg);
+    border: 0.45em solid #efbd14;
+}
+
+.progress-circle.over50.p94 .first50-bar {
+    background-color: #efbd14;
+}
+
+.progress-circle.p95 .value-bar {
+    transform: rotate(342deg);
+    border: 0.45em solid #e05f69;
+}
+
+.progress-circle.over50.p95 .first50-bar {
+    background-color: #e05f69;
+}
+
+.progress-circle.p96 .value-bar {
+    transform: rotate(346deg);
+    border: 0.45em solid #e05f69;
+}
+
+.progress-circle.over50.p96 .first50-bar {
+    background-color: #e05f69;
+}
+
+.progress-circle.p97 .value-bar {
+    transform: rotate(349deg);
+    border: 0.45em solid #e05f69;
+}
+
+.progress-circle.over50.p97 .first50-bar {
+    background-color: #e05f69;
+}
+
+.progress-circle.p98 .value-bar {
+    transform: rotate(353deg);
+    border: 0.45em solid #e05f69;
+}
+
+.progress-circle.over50.p98 .first50-bar {
+    background-color: #e05f69;
+}
+
+.progress-circle.p99 .value-bar {
+    transform: rotate(356deg);
+    border: 0.45em solid #e05f69;
+}
+
+.progress-circle.over50.p99 .first50-bar {
+    background-color: #e05f69;
+}
+
+.progress-circle.p100 .value-bar {
+    transform: rotate(360deg);
+    border: 0.45em solid #e05f69;
+}
+
+.progress-circle.over50.p100 .first50-bar {
+    background-color: #e05f69;
+}
+
+.progress-wrapper {
+    display: grid;
+    grid-template-columns: 135px 1fr;
+    align-items: center;
+    grid-gap: 40px;
+}
+
+.smartframe--settings .dashicons.dashicons-yes {
+    position: relative;
+    top: 3px;
+}
+
+.smartframe-logo {
+    margin: 0 0 0 15px;
+}
+
+.smartframe--logo-wrapper {
+    background-color: #1382DD;
+    display: flex;
+    align-items: center;
+    height: 150px;
+}
+
+.smartframe--logo-wrapper .description {
+    color: white;
+    margin: -15px 0 0 70px;
+    font-weight: 300;
+}
+
+a.smartframe--logo-wrapper-link {
+    text-decoration: none;
+}
+
+.smartframe-logo img {
+    height: 70px;
+}
+
+.smartframe--settings-table td {
+    width: 95%;
+    padding:5px;
+    display: inline-block;
+    margin-bottom: 0;
+    margin-top: 0;
+    min-height: 30px;
+    line-height: 30px;
+}
+
+div.misc-pub-section.tiny-compress-images {
+    border-top: 1px solid #e1e1e1;
+    padding-bottom: 16px;
+}
+
+/* Settings */
+
+/*end !*Settings Page csss styles for proporties.php*!*/
+
+/*Help section page admin/partials/settings/tutorial.php */
+
+.tutorial__item {
+    display: grid;
+    grid-template-columns: 50px auto;
+    grid-gap: 22px;
+    margin-bottom: 30px;
+}
+
+.tutorial__item i {
+    font-size: 50px;
+}
+
+.tutorial__item .tutorial--description {
+    max-width: 800px;
+}
+
+.tutorial__item .tutorial-title {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.tutorial__item > i {
+    display: flex;
+    justify-content: center;
+}
+
+/*END Help section page admin/partials/settings/tutorial.php */
+
+/*All rest css styles*/
+
+.smartframe-small-length {
+    width: 50px;
+}
+
+/*Modal errors messages*/
+
+.attachment-modal-notification {
+    text-align: left;
+    color: red;
+}
+
+/*end !*Modal errors messages*!*/
+
+/*Notifications*/
+
+.smartframe.warning {
+    display: inline-block;
+    line-height: 19px;
+    padding: 11px 15px;
+    font-size: 14px;
+    text-align: left;
+    margin: 25px 20px 0 2px;
+    background-color: #fff;
+    border-left: 4px solid #ffba00;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+}
+
+/*end notifications*/
+
+/*theme page css*/
+.smartframe--container {
+    display: grid;
+    /*grid-template-columns: repeat(auto-fit, 340px);*/
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
+
+@media only screen and (max-width: 740px) {
+    .smartframe--container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 100%);
+        grid-gap: 20px;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .smartframe--container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 21px;
+    }
+}
+
+.smartframe--item {
+    text-align: center;
+    position: relative;
+
+    line-height: 0;
+}
+
+.smartframe--item input {
+    position: absolute;
+    top: 12px;
+    left: 8px;
+}
+
+.column-image smart-frame {
+    margin: 0 0 14px 0px;
+}
+
+.thumbnail.thumbnail-image smart-frame {
+    --sf-max-height: calc(100vh - 180px);
+    /*width: auto !important;*/
+    margin: 0 0 14px 0px;
+}
+
+.sf-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.setting.sf-settings .name {
+    max-width: inherit;
+}
+
+.setting.sf-settings.sf-details input[type=checkbox] {
+    position: relative;
+}
+
+.setting.my_setting.sf-settings.sf-details span {
+    margin-top: 0;
+}
+
+.sf-settings div {
+    display: flex;
+}
+
+.setting.sf-settings {
+    display: grid;
+    grid-template-columns: 132px auto;
+    align-items: center;
+}
+
+.sf-settings div select, .sf-settings div input[type="text"] {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+.setting.sf-settings.sf-details {
+    display: inherit;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 900px) {
+    .setting.sf-settings {
+        display: inherit
+    }
+
+    .media-sidebar .setting.sf-settings a {
+        margin-top: -20px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .setting.sf-settings.sf-details:nth-of-type(4) {
+        margin-top: -10px;
+    }
+}
+
+.smartframe--attachments--options {
+    width: 70%;
+}
+
+.smartframe--settings a.smartframe--a {
+    text-decoration: none;
+}
+
+.smartframe--succes {
+    color: green;
+}
+
+.smartframe--error {
+    color: red;
+}
+
+.smartframe--warning {
+    color: orange;
+}
+
+.smartframe--missing {
+    color: gray;
+}
+
+form.compat-item input[type=checkbox].smartframe-use-smartframe-checkbox {
+    margin-bottom: 5px;
+}
+
+/* Settings */
+div.smartframe-status {
+    box-sizing: border-box;
+    width: 500px;
+    overflow: hidden;
+    display: block;
+    float: left;
+
+}
+
+div.smartframe-status:after {
+    clear: both;
+}
+
+.border {
+    border-radius: 4px;
+    border: 1px solid #e5e5e5;
+}
+
+@media only screen and (max-width: 800px) {
+    div.smartframe-status {
+        max-width: 100%;
+    }
+}
+
+div.smartframe-status div.status {
+    box-sizing: border-box;
+    padding: 22px 28px 22px 56px;
+    position: relative;
+}
+
+div.smartframe-status p.status span {
+    position: relative;
+    margin-right: 30px;
+}
+
+div.smartframe-status p.status span:after {
+    box-sizing: border-box;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    font-size: 28px;
+    font-family: dashicons;
+    font-weight: 400;
+    font-style: normal;
+}
+
+div.smartframe-status div.status-success,
+div.smartframe-status div.status-failure,
+div.smartframe-status div.status-pending {
+    padding-left: 28px;
+}
+
+div.smartframe-status div.status-success p {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+div.smartframe-status div.status-success p.status span:after {
+    right: -18px;
+    top: -11px;
+    color: #30d030;
+    content: "\f147";
+}
+
+div.smartframe-status div.status-failure p.status span:after {
+    right: -20px;
+    top: -11px;
+    color: #d54e21;
+    content: "\f158";
+}
+
+div.smartframe-status div.status-pending p.status span:after {
+    right: -24px;
+    top: -11px;
+    color: #0086ba;
+    font-size: 24px;
+    content: "\f466";
+}
+
+div.smartframe-status p.status a {
+    text-decoration: none;
+    font-weight: 400;
+}
+
+div.smartframe-status h4 {
+    margin-top: 0;
+    line-height: 1.5;
+}
+
+div.smartframe-status p {
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+div.smartframe-status button + p {
+    margin-top: 8px;
+}
+
+div.smartframe-status p:last-child {
+    margin-bottom: 0;
+}
+
+div.smartframe-status p.introduction {
+    margin-bottom: 12px;
+}
+
+div.smartframe-status p.status {
+    font-weight: bold;
+}
+
+div.smartframe-status div.upgrade {
+    display: flex;
+    padding: 22px 28px;
+    background-color: #F5F9FA;
+}
+
+div.smartframe-status div.upgrade p {
+    width: 400px;
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+    div.smartframe-status div.upgrade p {
+        width: auto;
+    }
+}
+
+div.smartframe-status div.upgrade div.button-container {
+    display: inline-block;
+}
+
+div.smartframe-status.wide {
+    width: 750px;
+}
+
+div.smartframe-status div.failure input {
+    border: 1px solid #d54e21;
+}
+
+div.smartframe-status div.failure p.message {
+    color: #d54e21;
+}
+
+div.smartframe-status div.update {
+    width: 380px;
+    padding: 22px 28px;
+    background-color: white;
+    margin-bottom: -99999px;
+}
+
+div.smartframe-no-register div.create {
+    padding: 40px 45px 40px 45px;
+    background-color: white;
+    position: relative;
+}
+
+div.smartframe-no-register.wide {
+    width: 380px;
+    display: block;
+    float: left;
+    margin-left: 40px;
+
+}
+
+div.smartframe-no-register.wide h4 {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 1410px) {
+    div.smartframe-no-register.wide {
+        margin-left: 0;
+        margin-top: 40px;
+        margin-right: 100px;
+    }
+}
+
+div.smartframe-status.wide div.create:after {
+    /*clear: both;*/
+}
+
+div.smartframe-status.wide div.create {
+    box-sizing: border-box;
+    background-color: white;
+    float: left;
+    width: 50%;
+    padding: 45px 45px 45px 45px;
+    border-right: 1px solid #e5e5e5;
+
+}
+
+div.smartframe-status.wide div.update {
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    padding: 40px 45px 99999px 40px;
+
+
+}
+
+@media screen and (max-width: 782px) {
+    div.wrap div.create p.smartframe--privacy-policy input[type='checkbox'] {
+        height: 25px;
+        width: 25px;
+    }
+}
+
+div.smartframe-status.wide div.update.radius {
+    border-radius: 4px;
+}
+
+div.smartframe-status.wide div.create input,
+div.smartframe-status.wide div.update input {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+div.smartframe-status.wide div.create button,
+div.smartframe-no-register.wide .button,
+div.smartframe-status.wide div.update button {
+    width: 100%;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+div.create p.smartframe--privacy-policy input[type='checkbox'] {
+    width: auto;
+    margin-top: 3px;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+
+}
+
+.smartframe-status.wide label.error {
+    display: block;
+    color: red;
+    margin-top: -6px;
+    margin-bottom: 8px;
+}
+
+.smallOpacity {
+    opacity: 0.5;
+}
+
+span.spinner.smartframe--loader {
+    position: absolute;
+    left: 50%;
+    margin-left: -20px;
+    top: 50%;
+    margin-top: -20px;
+    opacity: 1;
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px;
+}
+
+#smartframe--properties-page-register {
+    position: relative;
+}
+
+.components-modal__frame.smartframe-modal-preview .components-modal__content {
+    height: auto;
+}
+
+/*.toplevel_page_smart-frame-main-menu #screen-meta + .wrap{*/
+/*    margin: 40px;*/
+/*    display: grid;*/
+/*    grid-template-columns: 1fr 1fr;*/
+/*    grid-column-gap: 24px;*/
+/*}*/
+
+
+/*PROPORTIES BLOCKING SCREEN*/
+
+.smartframe--empty-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.smartframe--options-content {
+    opacity: 0.5;
+    position: relative
+}
+
+
+.jquery-modal.blocker.current {
+    z-index: 999999;
+    /*background-color: transparent;*/
+}
+
+.smartframe-modal.modal {
+    width: 80%;
+    max-width: 80%;
+}
+
+#smartframe--use-css-classes {
+    border-radius: 4px;
+}
+
+#smartframe-privacy-policy-id {
+    border-radius: 4px;
+}
+
+[disabled] {
+    pointer-events: none;
+    opacity: 0.56;
+}
+
+input[type=checkbox].error,
+input[type=color].error,
+input[type=date].error,
+input[type=datetime-local].error,
+input[type=datetime].error,
+input[type=email].error,
+input[type=month].error,
+input[type=number].error,
+input[type=password].error,
+input[type=radio].error,
+input[type=search].error,
+input[type=tel].error,
+input[type=text].error,
+input[type=time].error,
+input[type=url].error,
+input[type=week].error,
+select.error,
+textarea.error {
+
+    background-color: #fce4e4;
+    border: 1px solid #cc0033;
+    outline: none;
+}
